@@ -294,10 +294,116 @@ button i {
     line-height: 36px;
 }
 
-.service-card-5 h1{
+.service-card-5 h1 {
     background: linear-gradient(180deg, #75C051 0%, #E7E7E7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+
+/* --------------------- Services Section
+------------------ */
+
+.features-header p {
+    color: #A1A1AACC;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 40px;
+    margin-top: 20px;
+}
+
+
+.feature-item {
+    flex: 1 1 calc(30% - 30px);
+    max-width: calc(33.33% - 30px);
+    padding: 15px;
+    background-color: #1A1A1A;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: text;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.44px;
+}
+
+/* responsive */
+
+
+@media (max-width: 992px) {
+    .feature-btn {
+        flex: 1 1 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-btn {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* --------------------- Price Section
+------------------ */
+
+
+.price-header p {
+    color: #A1A1AACC;
+}
+
+
+
+/* --------------------- Reviews Section
+------------------ */
+
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.review-item {
+    width: calc(33% - 10px);
+    min-height: 200px;
+    border: 1px solid #B5B5B526;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.review-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.review-header h6 {
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+
+}
+
+.review-header p {
+    font-size: 13.9px;
+    font-weight: 400;
+    line-height: 18.1px;
+    color: #A1A1AACC;
+    margin-top: -4px;
 }
