@@ -73,6 +73,10 @@ span {
     color: var(--secondary-color);
 }
 
+.active {
+    color: var(--secondary-color) !important;
+}
+
 button.outlined-btn {
     padding: 10px 20px;
     background-color: transparent;
@@ -101,22 +105,22 @@ button i {
     margin-left: 5px;
 }
 
+
 /* --------------------- Main (Header + Hero + partners)
 ------------------ */
 
 #main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    height: 100vh;
+    height: 70vh; */
     background: url(./assets/images/hero-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px 0px;
 }
-
 
 /* header */
 
@@ -154,265 +158,57 @@ button i {
 
 /* hero */
 
-#hero {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#hero{
+    margin-top: 100px;
 }
 
-.hero-intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    width: 49%;
-    background-color: #0E0E0E;
-    padding: 6px 6px 8px 8px;
-    border-radius: 32px;
-    margin: 0 auto;
-}
-
-.hero-intro p {
-    margin-bottom: 0;
-}
-
-.hero-intro p span {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 2px 10px;
-    height: fit-content !important;
-    border-radius: 30px;
-}
-
-.hero-intro p i {
-    color: #A3DC2F;
-}
-
-.hero-content {
-    width: 70%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero-content p {
-    color: #B4B4B4;
-    font-size: 18px;
-    width: 85%;
-}
-
-.hero-btn-group {
-    gap: 15px;
+.hero-container p {
+    color: #A1A1AACC;
 }
 
 
-/* --------------------- Partners Section
------------------- */
-
-#partners h6 {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 19.53px;
-    font-family: "DM Sans", sans-serif;
-    color: white;
-}
-
-.partners-container {
-    display: flex;
-    align-items: center;
-    column-gap: 35px;
-    overflow: hidden;
-    justify-content: space-between;
-}
-
-.partners-container div:nth-child(1) {
-    width: fit-content;
-    padding-top: 10px;
-}
-
-.partners-container div:nth-child(2) {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    /* width: 100%; */
-}
-
-.owl-carousel .owl-item img {
-    width: fit-content;
-}
-
-
-/* --------------------- Services Section
+/* --------------------- About Cards Section
 ------------------ */
 
 
-#services .service-card {
-    min-height: 200px;
-    /* background-color:#75C051; */
+.card-1 {
+    min-height: 400px;
+    border: 1px solid #333333;
     border-radius: 16px;
     padding: 20px;
-    border: 1px solid #333333;
-    height: 100%;
-}
-
-.service-card-2 {
-    padding: 20px 20px 0px 20px !important;
-}
-
-.service-card-1 p,
-.service-card-3 p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22.4px;
-    color: #9B9CA1;
-}
-
-.service-card-2 p {
-    color: #9B9CA1;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 36px;
-}
-
-.service-card-1 img {
-    height: fit-content;
-}
-
-.service-card-4 p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 36px;
-    color: #828282;
-}
-
-.service-card-4 {
-    padding: 20px 20px 0px 20px !important;
-}
-
-.service-card-5 p {
-    color: #828282;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 36px;
-}
-
-.service-card-5 h1 {
-    background: linear-gradient(180deg, #75C051 0%, #E7E7E7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-
-/* --------------------- Services Section
------------------- */
-
-.features-header p {
-    color: #A1A1AACC;
-}
-
-.features-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    row-gap: 25px;
-    column-gap: 40px;
-    margin-top: 20px;
 }
 
-
-.feature-item {
-    flex: 1 1 calc(30% - 30px);
-    max-width: calc(33.33% - 30px);
-    padding: 15px;
-    background-color: #1A1A1A;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: text;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23.44px;
+.card-1 p{
+    color: #828282;
+    font-size: 16px;
 }
 
-/* responsive */
-
-
-@media (max-width: 992px) {
-    .feature-btn {
-        flex: 1 1 calc(50% - 30px);
-        max-width: calc(50% - 30px);
-    }
-}
-
-@media (max-width: 768px) {
-    .feature-btn {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-
-
-
-/* --------------------- Price Section
------------------- */
-
-
-.price-header p {
-    color: #A1A1AACC;
-}
-
-
-
-/* --------------------- Reviews Section
------------------- */
-
-
-.reviews {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 15px;
-}
-
-.review-item {
-    width: calc(33% - 10px);
+.about-card-2{
     min-height: 200px;
-    border: 1px solid #B5B5B526;
-    border-radius: 12px;
+    border: 1px solid #333333;
+    border-radius: 16px;
     padding: 20px;
-    text-align: left;
+    margin-top: 10px;
+}
+
+.about-card-2 h6{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  color: white; 
+}
+
+.about-card-2 p{
+    font-size: 16px;
+    color: #828282;
+   
 }
 
 
-.review-item p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-}
 
-.review-header h6 {
-
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    color: white;
-
-}
-
-.review-header p {
-    font-size: 13.9px;
-    font-weight: 400;
-    line-height: 18.1px;
-    color: #A1A1AACC;
-    margin-top: -4px;
-}
 
 /* --------------------- Action Section
 ------------------ */
