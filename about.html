@@ -43,26 +43,33 @@
 
     <!-- --------- Main Section ( Header + Hero ) Start Here ---------- -->
     <main id="main">
-        <header id="header">
+        <header id="header" class="mx-sm-0 mx-3">
             <div class="container header-container d-flex align-items-center justify-content-between">
                 <div>
                     <img src="./assets/images/logo.png" alt="logo" />
                 </div>
-                <div>
+                <div class="nav-menu">
                     <nav>
                         <ul class="d-flex mt-2">
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Contact Us</a></li>
-                            <!-- <li><a href="#">Affiliate</a></li> -->
-                            <li><a href="#" class="active">About</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <div class="d-lg-none d-block">
+                                <button class="outlined-btn">Sign In</button>
+                                <button class="filled-btn mt-sm-0 mt-4">Get Started <i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                            </div>
                         </ul>
+
                     </nav>
                 </div>
-                <div class="nav-btn-group">
+                <div class="nav-btn-group d-lg-block d-none">
                     <button class="outlined-btn">Sign In</button>
                     <button class="filled-btn">Get Started <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                 </div>
+                <i class="fa-light fa-bars-staggered bars-icon d-lg-none d-block text-white"></i>
             </div>
         </header>
         <section id="hero">
@@ -86,8 +93,8 @@
 
     <section id="about-cards" class="mt-5">
         <div class="container">
-            <div class="row g-3">
-                <div class="col-5 card-1">
+            <div class="row px-lg-0 px-3">
+                <div class="col-lg-5 card-1">
                     <h2 class="text-white">Innovating with technology</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Elit sit vestibulum interdum erat. Mattis nisi et mi ut
                         in cursus. Dolor lacus pulvinar non urna tristique. Venenatis blandit euismod enim amet sed
@@ -100,8 +107,8 @@
                         Mi tincidunt neque mauris facilisi malesuada at a id. Faucibus ut aliquet risus dui dolor vel.
                         At quis fermentum.</p>
                 </div>
-                <div class="col-7">
-                    <img src="./assets/images/about-card-img.png" alt="..." class="img-fluid">
+                <div class="col-lg-7 ">
+                    <img src="./assets/images/about-card-img.png" alt="..." class="about-card-img">
                     <div class="about-card-2">
                         <h6>Your success is our focus</h6>
                         <p>Lorem ipsum dolor sit amet consectetur. Sed et tellus malesuada nisl tempus. Sagittis viverra
@@ -120,10 +127,10 @@
     
     <!-- --------- Action Section starts Here ---------- -->
 
-    <section id="action" class="mt-5">
+    <section id="action" class="mt-5 px-lg-0 px-3">
         <div class="container action-container text-center">
             <h1>What at you waiting For?</h1>
-            <p class="w-75">Explore our transparent pricing plans designed to fit every budget. With no hidden fees,
+            <p class="w-md-75 w-sm-100">Explore our transparent pricing plans designed to fit every budget. With no hidden fees,
                 you’ll know
                 exactly what to expect. Choose the perfect package that empowers your success!</p>
             <button class="filled-btn mt-4">Contact Us <i class="fa-regular fa-arrow-right"></i></button>
@@ -133,20 +140,22 @@
     <!-- --------- Action Section Ends Here ---------- -->
 
 
+    
     <!-- --------- Footer Section starts Here ---------- -->
 
     <footer id="footer" class="my-5 pt-4">
-        <div class="container footer-container text-white">
+        <div class="container footer-container text-white px-sm-0 px-3">
             <div class="row">
-                <div class="col-5">
+                <div class="col-md-5 col-12 text-md-start text-sm-center text-start">
                     <h2>Skip to Trace</h2>
-                    <p class="mt-3 w-75">Founded in 2007, Sparch is specializing in providing innovative services such
+                    <p class="mt-3 mx-sm-100 w-md-75 w-sm-100">Founded in 2007, Sparch is specializing in providing innovative
+                        services such
                         as
                         websitFounded in 2007.</p>
                 </div>
-                <div class="col-7">
+                <div class="col-md-7 col-12 mt-md-0 mt-4">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4 col-6">
                             <h6>Important links</h6>
                             <ul class="mt-3">
                                 <li><a href="#">Home</a></li>
@@ -156,7 +165,7 @@
                                 <li><a href="#">Team</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-6">
                             <h6>Support</h6>
                             <ul class="mt-3">
                                 <li><a href="#">FAQs</a></li>
@@ -165,7 +174,7 @@
                                 <li><a href="#">Terms of Uses</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-12">
                             <h6>Social Media</h6>
                             <ul class="mt-3">
                                 <li><a href="#">Facebook</a></li>
@@ -184,6 +193,7 @@
     </footer>
 
     <!-- --------- Footer Section Ends Here ---------- -->
+
 
 
 

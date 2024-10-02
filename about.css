@@ -104,6 +104,38 @@ button i {
     margin-left: 5px;
 }
 
+.w-md-75 {
+    width: 75%;
+}
+
+
+
+/* responsivve */
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width:470px) {
+    h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+}
+
+
 
 /* --------------------- Main (Header + Hero + partners)
 ------------------ */
@@ -157,7 +189,7 @@ button i {
 
 /* hero */
 
-#hero{
+#hero {
     margin-top: 100px;
 }
 
@@ -165,6 +197,43 @@ button i {
     color: #A1A1AACC;
 }
 
+
+/* responsive */
+
+
+@media (max-width:992px) {
+    .hero-content {
+        width: 100%;
+    }
+
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 75%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        border-right: 1px solid var(--secondary-color);
+        transition: all 0.8s;
+    }
+
+    .nav-menu nav {
+        height: 100vh;
+    }
+
+    .nav-menu nav ul {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        row-gap: 40px !important;
+    }
+
+    .bars-icon {
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
 
 /* --------------------- About Cards Section
 ------------------ */
@@ -180,12 +249,16 @@ button i {
     justify-content: center;
 }
 
-.card-1 p{
+.about-card-img {
+    width: 100%;
+}
+
+.card-1 p {
     color: #828282;
     font-size: 16px;
 }
 
-.about-card-2{
+.about-card-2 {
     min-height: 200px;
     border: 1px solid #333333;
     border-radius: 16px;
@@ -193,14 +266,14 @@ button i {
     margin-top: 10px;
 }
 
-.about-card-2 h6{
+.about-card-2 h6 {
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
-  color: white; 
+    color: white;
 }
 
-.about-card-2 p{
+.about-card-2 p {
     font-size: 16px;
     color: #828282;
 }
@@ -237,6 +310,33 @@ button i {
     background-color: #1A1A1A;
     color: white;
 }
+
+/* responsive */
+
+@media (max-width:992px) {
+    .action-container h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:768px) {
+    .action-container h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .action-container h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .action-container {
+        min-height: 300px;
+    }
+}
+
 
 
 /* --------------------- Action Section

@@ -255,7 +255,7 @@ button i {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 50%;
+        width: 75%;
         height: 100vh;
         background-color: var(--primary-color);
         border-right: 1px solid var(--secondary-color);
