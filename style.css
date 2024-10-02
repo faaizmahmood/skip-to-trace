@@ -101,6 +101,37 @@ button i {
     margin-left: 5px;
 }
 
+.w-md-75 {
+    width: 75%;
+}
+
+
+
+/* responsivve */
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width:470px) {
+    h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+}
+
 /* --------------------- Main (Header + Hero + partners)
 ------------------ */
 
@@ -208,6 +239,67 @@ button i {
 }
 
 
+/* responsive */
+
+
+@media (max-width:992px) {
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-intro {
+        width: 55%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        border-right: 1px solid var(--secondary-color);
+        transition: all 0.8s;
+    }
+
+    .nav-menu nav {
+        height: 100vh;
+    }
+
+    .nav-menu nav ul {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        row-gap: 40px !important;
+    }
+
+    .bars-icon {
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:768px) {
+
+    .hero-intro {
+        width: 85%;
+    }
+
+}
+
+@media (max-width:470px) {
+
+    .hero-intro {
+        width: 80%;
+    }
+
+    .hero-intro p {
+        font-size: 14px;
+    }
+
+}
+
+
 /* --------------------- Partners Section
 ------------------ */
 
@@ -243,6 +335,16 @@ button i {
 
 .owl-carousel .owl-item img {
     width: fit-content;
+}
+
+
+/* responsive */
+
+
+@media (max-width:768px) {
+    .partners-logos img {
+        width: 15%;
+    }
 }
 
 
@@ -309,6 +411,14 @@ button i {
 }
 
 
+/* responsive */
+
+@media (max-width:768px) {
+    .service-card-1 img {
+        width: 100%;
+    }
+}
+
 /* --------------------- Services Section
 ------------------ */
 
@@ -344,17 +454,38 @@ button i {
 
 
 @media (max-width: 992px) {
-    .feature-btn {
+    .feature-item {
         flex: 1 1 calc(50% - 30px);
         max-width: calc(50% - 30px);
     }
 }
 
 @media (max-width: 768px) {
-    .feature-btn {
-        flex: 1 1 100%;
-        max-width: 100%;
+    .feature-item {
+        font-size: 16px;
     }
+}
+
+
+@media (max-width: 576px) {
+    .feature-item {
+        font-size: 14px;
+    }
+
+    .features-list {
+        row-gap: 15px;
+        column-gap: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 470px) {
+    .feature-item {
+        font-size: 12px;
+    }
+
 }
 
 
@@ -368,6 +499,69 @@ button i {
     color: #A1A1AACC;
 }
 
+
+.price-tabel {
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #333333;
+    border-radius: 20px;
+    min-height: 200px;
+    margin: 40px auto;
+}
+
+.table-head h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: white;
+}
+
+.price-tabel hr {
+    border-bottom: 1px solid #333333;
+}
+
+
+.price-tabel-body {
+    display: flex;
+}
+
+.price-tabel-body div:nth-child(1) {
+    width: 70%;
+    border-right: 1px solid #333333;
+    padding: 20px 30px 0px 30px;
+}
+
+.price-tabel-body div:nth-child(2) {
+    width: 30%;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.price-tabel-body h6 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 19px;
+
+}
+
+.price-tabel-body div:nth-child(1) h6 {
+    color: white;
+}
+
+.price-tabel-body div:nth-child(2) h6 {
+    color: var(--secondary-color);
+}
+
+
+/* resposive */
+
+@media (max-width:576px) {
+
+    .price-tabel-body h6 {
+        font-size: 18px;
+
+    }
+}
 
 
 /* --------------------- Reviews Section
@@ -403,7 +597,6 @@ button i {
     font-weight: 500;
     line-height: 18px;
     color: white;
-
 }
 
 .review-header p {
@@ -413,6 +606,21 @@ button i {
     color: #A1A1AACC;
     margin-top: -4px;
 }
+
+/* responive */
+
+@media (max-width:992px) {
+    .review-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width:768px) {
+    .review-item {
+        width: calc(100% - 10px);
+    }
+}
+
 
 /* --------------------- Action Section
 ------------------ */
@@ -444,8 +652,36 @@ button i {
     color: white;
 }
 
+/* responsive */
 
-/* --------------------- Action Section
+@media (max-width:992px) {
+    .action-container h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:768px) {
+    .action-container h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .action-container h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .action-container {
+        min-height: 300px;
+    }
+}
+
+
+
+
+/* --------------------- Footer Section
 ------------------ */
 
 

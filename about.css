@@ -7,7 +7,6 @@
 /* Roboto Mono */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 /* Quicksand */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
@@ -204,7 +203,6 @@ button i {
 .about-card-2 p{
     font-size: 16px;
     color: #828282;
-   
 }
 
 
