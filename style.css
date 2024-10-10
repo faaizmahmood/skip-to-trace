@@ -45,13 +45,13 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 45.57px;
 }
 
 h4 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 42px;
 }
@@ -192,7 +192,7 @@ button i {
     justify-content: center;
 }
 
-.hero-intro {
+/* .hero-intro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,7 +218,7 @@ button i {
 
 .hero-intro p i {
     color: #A3DC2F;
-}
+} */
 
 .hero-content {
     width: 80%;
@@ -279,11 +279,20 @@ button i {
     }
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 
     .hero-intro {
         width: 85%;
     }
+
+} */
+
+@media (max-width:576px) {
+
+    #main {
+        height: 90vh;
+    }
+    
 
 }
 
