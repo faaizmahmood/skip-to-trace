@@ -381,7 +381,7 @@ button i {
 .service-card-3 p {
     font-size: 20px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 24px;
     color: #828282;
 }
 
@@ -389,7 +389,7 @@ button i {
     color: #828282;
     font-size: 20px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 24px;
 }
 
 .service-card-1,
@@ -409,19 +409,19 @@ button i {
 .service-card-4 p {
     font-size: 20px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 24px;
     color: #828282;
 }
 
 .service-card-4 {
-    padding: 20px 20px 0px 20px !important;
+    padding: 20px 20px 20px 20px !important;
 }
 
 .service-card-5 p {
     color: #828282;
     font-size: 20px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 24px;
 }
 
 .service-card-5 h1 {
