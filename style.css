@@ -399,9 +399,9 @@ button i {
 .service-card-4,
 .service-card-5{
     height: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .service-card-1 img {
